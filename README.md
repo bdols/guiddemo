@@ -1,14 +1,20 @@
-==Sample GUID client==
+# Sample GUID client
 
-=Installation instructions=
+## Installation instructions
 
-Create virtualenv with virtualenv -p /usr/bin/python3.5 .venv
+Create virtualenv:
+
+````
+virtualenv -p /usr/bin/python3.5 .venv
+
 . .venv/bin/activate
+
 pip install -r pip.requirements
+````
 
+## CLI usages
 
-=CLI usages=
-
+````
 usage: client.py [-h] [--version] {create,read,update,delete} ...
 
 GUID client
@@ -25,10 +31,12 @@ positional arguments:
 optional arguments:
   -h, --help            show this help message and exit
   --version             show program's version number and exit
+````
 
 
-= create GUID =
+## create GUID
 
+````
 usage: client.py create [-h] [-e EXPIRE] -u USER [-g GUID] --url URL
 
 optional arguments:
@@ -38,9 +46,11 @@ optional arguments:
   -u USER, --user USER  user
   -g GUID, --guid GUID  guid
   --url URL             endpoint URL
+````
 
-= update GUID =
+## update GUID
 
+````
 usage: client.py update [-h] -g GUID -e EXPIRE --url URL
 
 optional arguments:
@@ -50,17 +60,22 @@ optional arguments:
                         expire for guid
   --url URL             endpoint URL
 
-= read GUID =
+````
 
+## read GUID 
+
+````
 usage: client.py read [-h] -g GUID --url URL
 
 optional arguments:
   -h, --help            show this help message and exit
   -g GUID, --guid GUID  guid
   --url URL             endpoint URL
+````
 
-= delete GUID =
+## delete GUID
 
+````
 usage: client.py delete [-h] -g GUID --url URL
 
 optional arguments:
@@ -68,3 +83,4 @@ optional arguments:
   -g GUID, --guid GUID  guid
   --url URL             endpoint URL
 
+````
