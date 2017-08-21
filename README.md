@@ -42,7 +42,7 @@ usage: client.py create [-h] [-e EXPIRE] -u USER [-g GUID] --url URL
 optional arguments:
   -h, --help            show this help message and exit
   -e EXPIRE, --expire EXPIRE
-                        expire for guid
+                        expiration time for guid specified in seconds in epoch
   -u USER, --user USER  user
   -g GUID, --guid GUID  guid
   --url URL             endpoint URL
@@ -57,7 +57,7 @@ optional arguments:
   -h, --help            show this help message and exit
   -g GUID, --guid GUID  guid
   -e EXPIRE, --expire EXPIRE
-                        expire for guid
+                        expiration time for guid specified in seconds in epoch
   --url URL             endpoint URL
 
 ````

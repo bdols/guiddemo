@@ -53,7 +53,7 @@ def add_expire(parser, required=False):
     parser -- an instance of argparse.ArgumentParser
     required -- whether '--expire' is required, defaults to False
     """
-    parser.add_argument('-e', '--expire', help='expire for guid', required=required, type=future_time)
+    parser.add_argument('-e', '--expire', help='expiration time for guid specified in seconds in epoch', required=required, type=future_time)
 
 
 def add_user(parser, required=False):
