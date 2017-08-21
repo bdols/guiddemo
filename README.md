@@ -12,6 +12,11 @@ virtualenv -p /usr/bin/python3.5 .venv
 pip install -r pip.requirements
 ````
 
+## Testing instructions
+
+Specify a --url of mock://test.net to simulate a server and display responses.
+Using the mock:// url with a guid that starts with '8' will generate a HTTP Client error and a guid that starts with '9' will generate a HTTP Server Error.
+
 ## CLI usages
 
 ````
